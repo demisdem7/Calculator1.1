@@ -1,5 +1,9 @@
 package com.company;
 
+/**
+ * класс ActionPerform принимает выражение по частям, превое и второе числа и опреция с ними
+ * а также отслеживание исключения классом MyException
+ */
 class ActionPerform {
     public  Integer action(int firstDigit, int secondDigit, String action) throws MyException {
         // check action and return perform this action
