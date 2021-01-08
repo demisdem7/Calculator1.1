@@ -28,8 +28,8 @@ class ActionPerform {
     }
 
     public static class MyException extends Throwable {
-        public String MyException(String s) {
-            return s;
+        public String MyException(String message) {
+            return message;
         }
     }
 }
