@@ -114,6 +114,9 @@ public class RomanNumerals {
             return "XIX";}
         if (arabicNumeral == 20) {
             return "XX";}
+        if (arabicNumeral == 0){
+            return "N";
+        }
 
         return "Такого значения нет в римских цифрах";
     }
