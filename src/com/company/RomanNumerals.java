@@ -18,7 +18,9 @@ public class RomanNumerals {
 
     public void romanNumerals(String expression) throws ActionPerform.MyException {
         String[] actions = new String[]{"\\+", "-", "\\*", "/"};
-        String[] romanNumerals = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
+        String[] romanNumerals = new String[]{
+                "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"
+        };
         int[] firstSecondNumbers =  new int[]{0, 0};
         int index = 0;
         for (String action : actions) {
@@ -67,6 +69,7 @@ public class RomanNumerals {
             return 9;}
         if (romanNumeral.equals("X")) {
             return 10;}
+
         return 0;
     }
 
@@ -91,6 +94,27 @@ public class RomanNumerals {
             return "IX";}
         if (arabicNumeral == 10) {
             return "X";}
+        if (arabicNumeral == 11) {
+            return "XI";}
+        if (arabicNumeral == 12) {
+            return "XII";}
+        if (arabicNumeral == 13) {
+            return "XIII";}
+        if (arabicNumeral == 14) {
+            return "XIV";}
+        if (arabicNumeral == 15) {
+            return "XV";}
+        if (arabicNumeral == 16) {
+            return "XVI";}
+        if (arabicNumeral == 17) {
+            return "XVII";}
+        if (arabicNumeral == 18) {
+            return "XVIII";}
+        if (arabicNumeral == 19) {
+            return "XIX";}
+        if (arabicNumeral == 20) {
+            return "XX";}
+
         return "Такого значения нет в римских цифрах";
     }
 
